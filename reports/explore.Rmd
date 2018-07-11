@@ -1,0 +1,52 @@
+---
+title: "Expertengutachten: Trockene Keller und kühles Nass aus dem Wasserhahn"
+author: '`r urkundenName()`'
+date: 'Lange Nacht der Wissenschaften (Berlin, `r format(Sys.Date(),format="%d. %B %Y")`)'
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+---
+
+#Problem und Zielstellung
+Die Berliner Wasserbetriebe wollen ein neues Becken bauen um darin Wasser in den 
+Boden zu versickern (Experten sagen dazu auch "künstliche Grundwasseranreicherung"). 
+Damit soll der gestiegene Trinkwasserbedarf der Berliner gedeckt werden.
+
+
+Folgende sind decken, 
+
+
+Mit der Lösung des Problemes wird `r urkundenName()` a `r format(Sys.Date(),format="%d. %B %Y")`)' auf der Langen Nacht der Wissenschaften am Stand des [Kompetenzzentrums Wasser Berlin](http://kompetenz-wasser.de) beauftragt. Dieser kann aufgrund seiner 
+
+
+#Material und Methoden
+
+Im Rahmen einer Vorstudie die von der Freien Universität durchgeführt wurde, konnten 
+bereits folgenden Werte ermittelt werden: 
+
+* Mächtigkeit des Grundwasserleiters: `r paste(runHantush()$baseProps$iniHead, lengthUnit())`
+
+* ein Speichervermögen von `r runHantush()$baseProps$specificYield * 100` Prozent aufweist 
+
+
+
+```{r , fig.cap="Vom Nachwuchswissenschaftler gewählte Modellparametrisierung"}
+baseProps()
+
+```
+
+# Ergebnis
+
+```{r, echo=FALSE, fig.cap="Hantush model results"}
+ bp <- lapply(runHantush()$baseProps,FUN = function (x) paste(x, collapse=","))
+          
+          mainTxt <- sprintf("Infiltrationsmenge: %6.1f m3",
+                             bp$basinWidth * bp$basinLength * bp$infiltrationRate * bp$Time, 
+)
+          
+          plot(Pegelanstieg ~ x, runHantush()$dat, col="blue", type = "b", las =1, pch = 16,
+                 xlab="Entfernung von der Beckenmitte (Meter)", 
+                 ylab = "Anstieg des Grundwasserstandes (Meter)",
+                 main = mainTxt)
+```

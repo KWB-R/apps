@@ -1,0 +1,57 @@
+---
+title: "Expertengutachten: Trockene Keller trotz Grundwasseranreicherung"
+author: '`r berichtName()`'
+date: 'Lange Nacht der Wissenschaften (Berlin, den 13. Juni 2015)'
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+---
+
+#Herausforderung
+Die Berliner Wasserbetriebe wollen ein neues Becken bauen, um darin Wasser in den 
+Boden zu versickern (Experten sagen dazu auch "künstliche Grundwasseranreicherung"). 
+Damit soll der gestiegene Trinkwasserbedarf der Berliner gedeckt werden. Allerdings
+gibt es ein Problem: links und rechts des geplanten Becken stehen Häuser mit 
+unterschiedlichen Kellertiefen, die natürlich nicht überschwemmt werden dürfen.
+
+Im Rahmen einer Machbarkeitsstudie, die vom Kompetenzzentrum Wasser im Auftrag der 
+Berliner Wasserbetriebe durchgeführt wurde, konnten bereits folgenden Werte 
+ermittelt werden: 
+
+* Wasserleitfähigkeit des 
+
+    + Beckenbodens: `r gwa$baseProps$infiltrationRate` Meter / Tag 
+    
+    + Bodens/Grundwasser: `r gwa$baseProps$horizConductivity` Meter / Tag 
+
+* Mächtigkeit des Grundwasserleiters: `r gwa$baseProps$iniHead` Meter
+
+* Speichervermögen des Grundwasserleiters: `r gwa$baseProps$specificYield * 100` Prozent
+
+Des Weiteren wurde von den Berliner Wasserbetrieben gefordert, das Becken wie folgt
+zu dimensionieren: 
+
+* Fläche: `r gwa$baseProps$basinWidth * gwa$baseProps$basinLength` Quadratmeter                                                                                                     
+* Länge: `r gwa$baseProps$basinLength` Meter  
+
+* Breite: `r gwa$baseProps$basinWidth` Meter
+
+Der Auftraggeber wünscht die Berechnung der Grundwasserveränderung nach `r gwa$baseProps$time` Tagen 
+permanenter Versickerung.
+
+#Zielstellung
+Gibt es eine Beckenposition, bei der weder links noch rechts Keller feucht werden?
+
+Mit der Lösung des Problemes wird `r berichtName()` am 13. Juni 2015 auf der Langen 
+Nacht der Wissenschaften am Stand des [Kompetenzzentrums Wasser Berlin](http://kompetenz-wasser.de) beauftragt, 
+da dieser im Rahmen eines Kurzpraktikums sein großes Forscherpotential bewiesen hat. 
+
+\pagebreak
+
+#Expertenergebnis
+```{r, echo=FALSE, fig.cap="Vom Nachwuchswissenschaftler gewählte Beckenposition"}
+plotGameResult(gameResult=gameResult(), houseConfig, xlim = c(-400, 300), 
+    basinLength = gwa$baseProps$basinLength
+  )
+```
