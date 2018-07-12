@@ -1,0 +1,3 @@
+wtaqByR.inp
+wtaqByR.out
+wtaqByR.plot
