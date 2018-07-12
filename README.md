@@ -13,6 +13,16 @@ suppliers (including a standardised reporting document).
 
 [![Screenshot of aquanes.report app](images/aquanes-report_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/aquanes.report?urlpath=shiny/haridwar/)
 
+## [kwb.hantush](https://kwb-r.github.io/kwb.hantush)
+
+An R package for calculating groundwater mounding beneath an infiltration basin
+based on the [Hantush equation, 1967](http://doi.org/10.1029/WR003i001p00227).
+ 
+ 
+### GWAmanager (in German) [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/GWAmanager?urlpath=shiny)
+ 
+[![Screenshot of GWAmanager app](images/GWAmanager_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/GWAmanager?urlpath=shiny)
+
 ## [kwb.wtaq](https://kwb-r.github.io/kwb.wtaq) 
 
 The R package **kwb.wtaq** provides a programmatic interface to the well drawdown model [WTAQ version 2.1](https://water.usgs.gov/ogw/wtaq/) (developed by the U.S. Geological Survey). The WTAQ 2.1 model 
