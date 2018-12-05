@@ -1,0 +1,45 @@
+---
+title: "Interactive Hantush Explore Report"
+author: '`r loginData$fullName`'
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+---
+
+# Model parameterisation 
+
+You have selected the following values as input parameters for the Hantush model
+run
+
+```{r , fig.cap="Hantush model parameterisation"}
+baseProps()
+```
+
+\pagebreak
+
+# Model result
+
+```{r, echo=FALSE, fig.cap="Interactive Hantush model results"}
+ bp <- lapply(runHantush()$baseProps,FUN = function (x) paste(x, collapse=","))
+          
+          mainTxt <- sprintf("time: %s d; w: %s m; l: %s m; inf: %s m/d; hkr: %s m/d, h0: %s m, sy: %s, nTS: %s",
+                             bp$time, 
+                             bp$basinWidth, 
+                             bp$basinLength, 
+                             bp$infiltrationRate, 
+                             bp$horizConductivity, 
+                             bp$iniHead,
+                             bp$specificYield, 
+                             bp$numberTimeSteps)
+          
+          plot(WLincrease ~ x, runHantush()$dat, 
+               las = 1, 
+               type = "b",
+               pch = 16,
+               xlab="Distance from basin center (m)", 
+               ylab = "Water level increase (m)",
+               main = mainTxt)
+```

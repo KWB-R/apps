@@ -1,0 +1,36 @@
+.mg-active-datapoint {
+    fill: black;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.mg-markers text {
+    fill: black;
+    font-size: 2rem;
+    opacity: 0.5;
+    stroke: none;
+}
+
+.mg-x-axis text,
+.mg-y-axis text,
+.mg-histogram .axis text {
+    fill: black;
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.mg-x-axis .label,
+.mg-y-axis .label,
+.mg-axis .label {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.mg-baselines text {
+    fill: black;
+    font-size: 2rem;
+    opacity: 0.5;
+    stroke: none;
+}
