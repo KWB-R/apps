@@ -19,9 +19,21 @@ An R package for calculating groundwater mounding beneath an infiltration basin
 based on the [Hantush equation, 1967](http://doi.org/10.1029/WR003i001p00227).
  
  
-### GWAmanager (in German) [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/GWAmanager?urlpath=shiny)
+### GWAmanager (in German)
+
+**Important note:** in order to see the plot in the tab **Erforschen** (see screenshot below) it is necessary to enable the checkbox **Details** once after starting the app.
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/GWAmanager?urlpath=shiny)
  
 [![Screenshot of GWAmanager app](images/GWAmanager_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/GWAmanager?urlpath=shiny)
+
+### Hantush (in English)
+
+**Important note:** in order to see the plot in the tab **Explore** (see screenshot below) it is necessary to enable the checkbox **Details** once after starting the app. 
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/hantush?urlpath=shiny)
+ 
+[![Screenshot of Hantush app](images/hantush_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/hantush?urlpath=shiny)
 
 ## [kwb.wtaq](https://kwb-r.github.io/kwb.wtaq) 
 
