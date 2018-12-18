@@ -13,7 +13,7 @@ suppliers (including a standardised reporting document).
 
 [![Screenshot of aquanes.report app](images/aquanes-report_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/aquanes.report?urlpath=shiny/haridwar/)
 
-## [kwb.hantush](https://kwb-r.github.io/kwb.hantush)
+## [kwb.hantush](https://kwb-r.github.io/kwb.hantush/dev)
 
 An R package for calculating groundwater mounding beneath an infiltration basin
 based on the [Hantush equation, 1967](http://doi.org/10.1029/WR003i001p00227).
