@@ -18,7 +18,7 @@ suppliers (including a standardised reporting document).
 
 The R package **[fakin.path.app](https://kwb-r.github.io/fakin.path.app)** contains an R Shiny App that loads file path information from a file and displays the paths in different ways. The aim of the app is to find weaknesses in given folder structures.
 
-An interactive demo containing a dummy file path dataset is deployed using the service [[!Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/fakin.path.app?urlpath=shiny)
+An interactive demo containing a dummy file path dataset is deployed using the free service [MyBinder.org](https://mybinder.org): [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/fakin.path.app?urlpath=shiny)
 
 [![Screenshot of fakin.path.app](images/fakin-path-app_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/fakin.path.app?urlpath=shiny)
 
