@@ -13,6 +13,16 @@ suppliers (including a standardised reporting document).
 
 [![Screenshot of aquanes.report app](images/aquanes-report_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/aquanes.report?urlpath=shiny/haridwar/)
 
+
+## [fakin.path.app](https://kwb-r.github.io/fakin.path.app) 
+
+The R package **[fakin.path.app](https://kwb-r.github.io/fakin.path.app)** contains an R Shiny App that loads file path information from a file and displays the paths in different ways. The aim of the app is to find weaknesses in given folder structures.
+
+An interactive demo containing a dummy file path dataset is deployed using the service [[!Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kwb-r/apps/fakin.path.app?urlpath=shiny)
+
+[![Screenshot of fakin.path.app](images/fakin-path-app_screenshot.jpg)](https://mybinder.org/v2/gh/kwb-r/apps/fakin.path.app?urlpath=shiny)
+
+
 ## [kwb.hantush](https://kwb-r.github.io/kwb.hantush/dev)
 
 An R package for calculating groundwater mounding beneath an infiltration basin
