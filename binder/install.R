@@ -1,2 +1,12 @@
-install.packages("remotes")
+cran_deps = c('askpass', 'assertthat', 'backports', 'base64enc', 'BH', 'bit', 'bit64', 'callr', 'cli', 'clipr', 
+              'colorspace', 'commonmark', 'cpp11', 'crayon', 'crosstalk', 'curl', 'data.table', 'desc', 'digest', 
+              'dplyr', 'DT', 'ellipsis', 'evaluate', 'fansi', 'farver', 'fastmap', 'fs', 'gdata', 'generics', 
+              'ggplot2', 'glue', 'gridBase', 'gtable', 'gtools', 'hexbin', 'hms', 'htmltools', 'htmlwidgets', 
+              'httpuv', 'httr', 'igraph', 'isoband', 'jsonlite', 'jsTree', 'labeling', 'later', 'lazyeval', 
+              'lifecycle', 'magrittr', 'mime', 'munsell', 'networkD3', 'openssl', 'pathlist', 'pillar', 
+              'pkgbuild', 'pkgconfig', 'pkgload', 'plotly', 'praise', 'prettyunits', 'processx', 'promises', 
+              'ps', 'purrr', 'R6', 'RColorBrewer', 'Rcpp', 'readr', 'remotes', 'rlang', 'rprojroot', 'rstudioapi', 
+              'scales', 'shiny', 'shinyFiles', 'shinyjs', 'sourcetools', 'sys', 'testthat', 'tibble', 'tidyr', 
+              'tidyselect', 'treemap', 'utf8', 'vctrs', 'viridisLite', 'withr', 'wordcloud', 'xtable', 'yaml')
+install.packages(pkgs=cran_deps)
 remotes::install_github("kwb-r/fakin.path.app@v0.3.0", upgrade = "never")
